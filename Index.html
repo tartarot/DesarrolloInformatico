@@ -4,32 +4,60 @@
         <meta charset="UTF-8">
         <title>Desarrollo Informatico</title>
         <link rel="stylesheet" type="text/css" href="estilo.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" integrity="sha384-rtJEYb85SiYWgfpCr0jn174XgJTn4rptSOQsMroFBPQSGLdOC5IbubP6lJ35qoM9" crossorigin="anonymous">
+        <script type="text/javascript">
+            function openSlideMenu()
+            {
+                document.getElementById("menu").style.width = "250px";
+                document.getElementById("submenu1").style.marginLeft = "250px";
+            }
+            function closeSlideMenu()
+            {
+                document.getElementById("menu").style.width = "0";
+                document.getElementById("submenu1").style.marginLeft = "0";
+            }
+        </script>
     </head>
-    <body>
-        <div class="portada">
-            <td><img src="" width="250" height="80"></td>
-            <td>Inicio</td>
-            <ul>
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Descripccion</a></li>
-                <li><a href="">Localizacion</a></li>
-                <li><a href="">Formatos</a></li>
-                <li><a href="">Login</a></li>
-                <li><a href="">contactos</a></li>
-            </ul>
+    <div class="General">
+        <div id="submenu1">
+            <span class="slide">
+                <a href="#" onclick="openSlideMenu()"><i class="fas fa-bars"></i></a>
+            </span>
+            <div id="menu" class="nav">
+                <a href="#" class="close" onclick="closeSlideMenu()"><i class="fas fa-times"></i></a>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Descripccion</a></li>
+                            <ul>
+                                <li><a href="#" style="margin-left: 20px">Mision</a></li>
+                                <li><a href="#" style="margin-left: 20px">Vision</a></li>
+                            </ul>
+                        <li><a href="#">Localizacion</a></li>
+                            <ul>
+                                <li><a href="#" style="margin-left: 20px">Mapa</a></li>
+                                <li><a href="#" style="margin-left: 20px">Ubicacion</a></li>
+                            </ul>
+                        <li><a href="#">Formatos</a></li>
+                            <ul>
+                                <li><a href="#" style="margin-left: 20px">Formato 230</a></li>
+                                <li><a href="#" style="margin-left: 20px">Formato 210</a></li>
+                            </ul>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Contactos</a></li>
+                    </ul>
+            </div>
         </div>
-        <div class="medio1">
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
+        <div id="espacio">
+            <div>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Descripccion</a></li>
+                    <li><a href="#">Localizacion</a></li>
+                    <li><a href="#">Formatos</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Contactos</a></li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <table align="center">
-            </table>
-        </div>
-    </body>
-
+    </div>
 </HTml>

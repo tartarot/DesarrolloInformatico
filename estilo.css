@@ -1,9 +1,96 @@
-.portada
+@import url('https://fonts.googleapis.com/css?family=Catamaran:800&display=swap');
+
+body
+{
+    font-family: 'Catamaran', sans-serif;
+}
+
+.General
 {
     display: flex;
     justify-content: space-between;
+    padding: 2px;
+    transition: margin-left .5s;
+    width: 100%;
+    height: 100%;
+    background-image: url('fondo.jpg');
 }
-.portada ul
+
+.General #submenu1
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px;
+    height: 700px;
+    background-color: darkslategray;
+}
+.nav
+{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #2d3135;
+    opacity: .9;
+    padding-top: 60px;
+    transition: 0.2s;
+    overflow: hidden; 
+}
+
+.nav ul
+{
+    padding: 0;
+}
+
+.nav li:hover
+{
+    border-left: 9px solid #3e84c1;
+    background-color: #34383d;
+}
+
+.nav a
+{
+    display: block;
+    padding: 10px 10px;
+    color: #ccc;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav a:hover
+{
+    color: #fff;
+    transition: .5s;
+}
+
+.nav .close
+{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 30px;
+}
+
+.slide a
+{
+    font-size: 30px;
+    color: #2d3135;
+}
+
+.General #espacio
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 800px;
+    height: 40px;
+    background-color: #fff;
+}
+
+.General #espacio ul
 {
     margin: 0;
     padding: 0;
@@ -11,17 +98,11 @@
     vertical-align: middle;
 }
 
-.portada ul li
+.General #espacio ul li
 {
     padding:10px 30px;
     font-family: 'Times New Roman';
-    font-size: 1.2em;
+    font-size: 1em;
     color: white;
     display: inline-block;
-}
-
-.medio1
-{
-    display: flex;
-    justify-content: space-between;
 }

@@ -2,10 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" integrity="sha384-rtJEYb85SiYWgfpCr0jn174XgJTn4rptSOQsMroFBPQSGLdOC5IbubP6lJ35qoM9" crossorigin="anonymous">
+    <title>Menu Vertical</title>
     <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script type="text/javascript">
+        function openSlideMenu()
+        {
+            document.getElementById("menu").style.width = "250px";
+            document.getElementById("content").style.marginLeft = "250px";
+        }
+        function closeSlideMenu()
+        {
+            document.getElementById("menu").style.width = "0";
+            document.getElementById("content").style.marginLeft = "0";
+        }
+    </script>
 </head>
 <body>
-    
+    <div id="content">
+        <span class="slide">
+            <a href="#" onclick="openSlideMenu()"><i class="fas fa-bars"></i></a>
+        </span>
+
+        <div id="menu" class="nav">
+            <a href="#" class="close" onclick="closeSlideMenu()"><i class="fas fa-times"></i></a>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Descripccion</a></li>
+                <li><a href="#">Localizacion</a></li>
+                <li><a href="#">Formatos</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Contactos</a></li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
