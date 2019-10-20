@@ -125,7 +125,7 @@ body
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    width: 140px;
+    width: 240px;
     height: 60px;
     background-color: white;
 }
@@ -179,40 +179,35 @@ body
 .GeneralS .CuartoM
 {
     display: flex;
-    align-self: center;
-    align-items: center;
-    width: 900px;
-    height: 80px;
+    justify-content: space-between;
+    width: 100%;
+    height: 160px;
     background-color: transparent;
 }
 
-.GeneralS .CuartoM #medioprimero p
+.GeneralS .CuartoM .medioprimero
 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    font-family: 'Times New Roman';
-    font-size: 6em;
-    
+    width: 500px;
+    height: 150px;
+    margin-inline-start: 40px;
+    padding: 10px 20px;
+    background-color: white;
 }
 
-.GeneralS .QuintoM
+.GeneralS .CuartoM .medioprimero h2
 {
-    display: flex;
-    align-self: center;
-    align-items: center;
-    width: 450px;
-    height: 80px;
-    background-color: transparent;
+    margin: 0;
+    font-family: 'Times New Roman';
+    font-size: 2em;
+    text-decoration: underline black;
 }
 
-.GeneralS .QuintoM #mediosegundo p
+.GeneralS .CuartoM .mediosegundo p
 {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+    margin: 0;
     font-family: 'Times New Roman';
-    font-size: 6em;
+    padding: 0px 20px;
+    font-size: 1em;
 }
 
 .GeneralS .SextoM
@@ -238,7 +233,7 @@ body
 {
     width: 500px;
     height: 150px;
-    margin-inline-start: 40px;
+    margin-inline-start: 200px;
     padding: 10px 20px;
     background-color: white;
 }
