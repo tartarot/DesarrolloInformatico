@@ -3,7 +3,6 @@
 body
 {
     font-family: 'Catamaran', sans-serif;
-    
 }
 
 .General
@@ -27,21 +26,23 @@ body
     padding: 0;
     transition: margin-left .5s;
     width: 80px;
-    height: 650px;
+    height: 100%;
     background-color: cyan;
 }
-.GeneralP .PrimeroM
+
+.PrimeroM
 {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 80px;
-    height: 650px;
+    height: 980px;
     padding: 0;
     transition: margin-left .7s;
     background-color: midnightblue;
 }
-.GeneralP .PrimeroM .nav
+
+.nav
 {
     height: 100%;
     width: 0;
@@ -56,18 +57,18 @@ body
     overflow: hidden; 
 }
 
-.GeneralP .PrimeroM .nav ul
+.nav ul
 {
     padding: 0;
 }
 
-.GeneralP .PrimeroM .nav li:hover
+.nav li:hover
 {
     border-left: 9px solid #3e84c1;
     background-color: navy;
 }
 
-.GeneralP .PrimeroM .nav a
+.nav a
 {
     display: block;
     padding: 0px 10px;
@@ -76,13 +77,13 @@ body
     font-size: 20px;
 }
 
-.GeneralP .PrimeroM .nav a:hover
+.nav a:hover
 {
     color: #fff;
     transition: .5s;
 }
 
-.GeneralP .PrimeroM .nav .close
+.nav .close
 {
     position: absolute;
     top: 0;
@@ -90,7 +91,7 @@ body
     font-size: 30px;
 }
 
-.GeneralP .PrimeroM .slide a
+.slide a
 {
     font-size: 40px;
     color: darkgoldenrod;
@@ -103,14 +104,13 @@ body
     padding: 0;
     transition: margin-left .5s;
     width: 100%;
-    height: 600px;
+    height: 900px;
     background-image: url('fondo.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
-
-    
 }
-.GeneralS .SegundoM
+
+.SegundoM
 {
     display: flex;
     align-self: flex-start;
@@ -120,17 +120,17 @@ body
     background-color: transparent;
 }
 
-.GeneralS .SegundoM #inicio1
+.inicio1
 {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    width: 240px;
+    width: 180px;
     height: 60px;
     background-color: white;
 }
 
-.GeneralS .SegundoM #inicio1 p
+.inicio1 p
 {
     margin: 0;
     font-family: 'Times New Roman';
@@ -139,137 +139,149 @@ body
     display: inline-block;
 }
 
-.GeneralS .SegundoM #inicio2
+.inicio2
 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    width: 800px;
+    width: 850px;
     height: 50px;
-    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.GeneralS .SegundoM #inicio2 ul
+.inicio2 ul
 {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+}
+
+.inicio2 ul li
+{
     display: inline-block;
-    vertical-align: middle;
-}
-
-.GeneralS .SegundoM #inicio2 ul li
-{
-    padding: 10px 15px;
+    padding: 10px 13px;
+    background: white;
+    border-radius: 5px;
+    color: white;
     font-family: 'Times New Roman';
     font-size: 1.5em;
-    color: white;
-    display: inline-block;
 }
 
-.GeneralS .TerceroM
+.inicio2 ul li:hover
 {
-    display: flex;
-    align-self: center;
-    align-items: center;
-    width: 200px;
+    background-color: orange;
+    color: white;
+    transition: .2s;
+}
+
+.TerceroM
+{
+    width: 100%;
     height: 100px;
     background-color: transparent;
 }
 
-.GeneralS .CuartoM
+.CuartoM
 {
     display: flex;
-    align-self: flex-start;
-    align-items: flex-start;
-    width: 900px;
-    height: 160px;
-    background-color: transparent;
-}
-
-.GeneralS .CuartoM #medioprimero
-{
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 500px;
-    height: 150px;
-    padding: 15px 20px;
-    background-color: white;
-}
-
-.GeneralS .CuartoM #medioprimero p
-{
-    margin: 0;
-    font-family: 'Times New Roman';
-    font-size: 2em;
-    display: inline-block;
-}
-
-.GeneralS .SextoM
-{
-    display: flex;
-    align-self: center;
+    justify-content: space-around;
     align-items: center;
-    width: 200px;
-    height: 60px;
-    background-color: transparent;
-}
-
-.GeneralS .SeptimoM
-{
-    display: flex;
-    align-self: flex-start;
-    align-items: flex-start;
-    justify-content: space-between;
     width: 100%;
-    height: px;
+    height: 650px;
     background-color: transparent;
 }
 
-.GeneralS .SeptimoM .final1
+.medioprimero
 {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 500px;
-    height: 150px;
-    padding: 15px 20px;
-    background-color: white;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    border-radius: 50px;
+    background-image: url(GifEsfera.gif);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.GeneralS .SeptimoM .final1 h2
+.medioprimero a
 {
     margin: 0;
-    align-items: flex-start;
     font-family: 'Times New Roman';
+    padding: 10px 20px;
     font-size: 2em;
-    
+    text-decoration: none;
 }
 
-.GeneralS .SeptimoM .final1 #final2 p
+.mediosegundo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    border-radius: 50px;
+    background-image: url(GifEsfera.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mediosegundo a
 {
     margin: 0;
-    align-items: flex-start;
     font-family: 'Times New Roman';
-    font-size: 1em;
-
+    padding: 10px 20px;
+    font-size: 2em;
+    text-decoration: none;
 }
 
-.GeneralS .SeptimoM .final1 #final3
+.QuintoM
+{
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+}
+
+.SextoM
+{
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+}
+
+.SeptimoM
+{
+    width: 100%;
+    height: 0px;
+    background-color: transparent;
+}
+
+.OctavoM
+{
+    width: 100%;
+    height: 0px;
+    background-color: transparent;
+}
+
+.NovenoM
+{
+    width: 100%;
+    height: 0px;
+    background-color: transparent;
+}
+
+.DiezM
 {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    width: 150px;
-    height: 160px;
-    padding: 0px 15px;
+    width: 100%;
+    height: 100px;
     background-color: transparent;
 }
 
-.GeneralS .SeptimoM #final3 p
+.DiezM p
 {
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
     font-family: 'Times New Roman';
-    font-size: 6em;
-    display: inline-block;
+    font-size: 90px;
 }

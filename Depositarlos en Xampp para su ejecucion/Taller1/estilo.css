@@ -1,0 +1,23 @@
+
+table
+{
+    align-content: center;
+    border:2px solid #178212;
+    border-collapse:collapse;
+}
+td 
+{
+    width: 250px;
+    height: 10px;
+    border:1px solid #178212;
+    padding:10px;
+}
+
+#TR
+{
+    border: 0;
+}
+#GG
+{
+    border: 0;
+}
